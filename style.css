@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.center{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+body{
+    background-image: url("blake_track.JPG");
+    background-position: 50% 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    overflow: scroll;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: "Roboto", monospace;
+    border: silver 10px groove;
+    border-radius: 5px;
+    padding: 20px;
+    letter-spacing: 2px;
+    background-color: black;
+}
+
+h2{
+    color: yellow;
+    font-style: italic;
+    font-variant: small-caps;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1em;
+}
+
+.dropdown{
+    background-color: gray;
+    font-size: 25px;
+    border: silver groove 5px;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+#nav{
+    position: relative;
+    display: inline-block;
+    margin: 1em;
+    font-family: "Roboto", Arial;
+    font-variant: small-caps;
+}
+
+.content{
+    background-color: yellow;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.content a{
+    background-color: gray;
+    color: black;
+    padding: 12px 16px;
+    text-decoration:none;
+    display: block;
+    transition-duration: 0.7s;
+}
+
+.content a:hover{
+    border: white 5px solid;
+    border-radius: 3px;
+    font-weight: bold;
+    color: yellow;
+}
+
+#nav:hover .content{
+    display: block;
+}
+
+#nav:hover .dropdown{
+    background-color: yellow;
+    color: black;
+}
+
+#button1{
+    position: relative;
+    top: 30%;
+    left: 50%;
+    font-size: 30px;
+    background-color: navy;
+    color: yellow;
+    font-family: "Courier New", 'Courier New', Courier, monospace;
+    padding: 20px 40px;
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: bold;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    box-shadow: 0 9px #999;
+    border: none;
+}
+
+#button1:hover{
+    color: navy;
+    background-color: yellow;
+}
+
+#button1:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
