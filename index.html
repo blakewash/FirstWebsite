@@ -3,6 +3,7 @@
 <head>
     <title>JavaScript Crash</title>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="jstut.js"></script>
 </head>
 <body>
 
@@ -13,12 +14,17 @@
         var myvariable;
 
         function say_hi() {
-            document.write("hi");
+            document.write("hi ");
         }
+
+        say_hi();
+
+        // var name = prompt("Enter your name");
+        // document.write(name);
 
         // alert("this is an alert");
 
-        say_hi();
+        
 
     </script>
 
@@ -36,7 +42,7 @@
         </div>
     </div>
     <div class="js">
-        <button id="button1">
+        <button id="button1" onclick="button_click(this)">
             This is a button
         </button>
     </div>
